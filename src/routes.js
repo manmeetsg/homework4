@@ -1,3 +1,4 @@
+/* Given by example and edited to match project */
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import Index from './components/index';

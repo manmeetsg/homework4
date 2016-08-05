@@ -1,3 +1,4 @@
+// Received help for styling from Alex Beals as he is way better than me at styling
 body {
   font-family: "Roboto", sans-serif;
   color: rgb(10%, 10%, 10%);
@@ -16,6 +17,31 @@ body {
     color: blue;
     font-family: "Roboto", sans-serif;
   }
+}
+
+.post, .new {
+  text-decoration: none;
+
+  button, a {
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 14px;
+
+    margin: 10px 3px;
+    cursor: pointer;
+  }
+}
+
+input, textarea {
+  padding: 5px;
+  font-size: 1.2em;
+  width: 100%;
 }
 
 .posts {
@@ -43,31 +69,4 @@ body {
       }
     }
   }
-}
-
-.post, .new {
-  text-decoration: none;
-
-  button, a {
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-    padding: 10px;
-    text-decoration: none;
-
-    color: black;
-
-    font-size: 14px;
-
-    margin: 10px 3px;
-    cursor: pointer;
-  }
-}
-
-
-
-input, textarea {
-  padding: 5px;
-  font-size: 1.2em;
-  width: 100%;
 }

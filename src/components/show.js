@@ -35,12 +35,12 @@ class Show extends Component {
     this.props.fetchPost(this.props.params.id);
   }
 
-  titleChange(event) {
-    this.setState({ title: event.target.value });
+  deletePost() {
+    this.props.deletePost(this.props.params.id);
   }
 
-  tagsChange(event) {
-    this.setState({ tags: event.target.value });
+  titleChange(event) {
+    this.setState({ title: event.target.value });
   }
 
   submit(event) {
@@ -55,17 +55,17 @@ class Show extends Component {
     );
   }
 
+  tagsChange(event) {
+    this.setState({ tags: event.target.value });
+  }
+
   contentChange(event) {
     this.setState({ content: event.target.value });
   }
 
 
-  deletePost() {
-    this.props.deletePost(this.props.params.id);
-  }
-
   render() {
-    if (!this.props.post) { // No set post (initially)
+    if (!this.props.post) { // No set post, avoiding crashing
       return (
         <h3>Loading...</h3>
       );
@@ -74,20 +74,17 @@ class Show extends Component {
         <div className="post">
           <form submit={this.submit}>
             <label htmlFor="title">Title</label>
-            <input onChange={this.titleChange} type="text" id="title" placeholder="title" value={this.state.title} />
-
+            <input onChange={this.titleChange} type="text" id="title" placeholder="TITLE" value={this.state.title} />
             <label htmlFor="tags">Tags</label>
-            <input onChange={this.tagsChange} type="text" id="tags" placeholder="tags" value={this.state.tags} />
-
+            <textarea onChange={this.contentChange} type="text" id="content" placeholder="CONTENT" value={this.state.content} />
+            <input onChange={this.tagsChange} type="text" id="tags" placeholder="TAGS" value={this.state.tags} />
             <label htmlFor="content">Content</label>
-            <textarea onChange={this.contentChange} type="text" id="content" placeholder="content" value={this.state.content} />
-
             <button type="submit">Done Editing</button>
           </form>
           <button className="delete" onClick={this.deletePost}>Delete</button>
         </div>
       );
-    } else { // Normal post
+    } else { // Normal post without any editing going on
       return (
         <div className="post">
           <h3>{this.props.post.title}</h3>

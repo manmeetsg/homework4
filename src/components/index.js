@@ -12,6 +12,7 @@ class Index extends Component {
     this.state = {};
   }
 
+  // fetch our posts
   componentWillMount() {
     this.props.fetchPosts();
   }
@@ -25,7 +26,7 @@ class Index extends Component {
           No posts yet!
         </div>
       );
-    // if we do have posts
+    // if we do have posts, display them correctly
     } else {
       return (
         <div className="posts">

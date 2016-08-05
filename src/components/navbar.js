@@ -8,7 +8,7 @@ const NavBar = (props) => {
   return (
     <div className="nav">
       <Link to="/">Manmeet Blog</Link>
-      <Link to="/posts/new">New Post</Link>
+      <Link to="/posts/new">Create Post</Link>
     </div>
   );
 };

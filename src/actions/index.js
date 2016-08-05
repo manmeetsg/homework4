@@ -1,3 +1,6 @@
+/* Due to challenges this week, I discussed a lot with Matthew Goldstein and
+ Alex Beals. Also, much code is pulled from examples from lectures and workshops
+*/
 import axios from 'axios';
 import { browserHistory } from 'react-router';
 
@@ -55,9 +58,6 @@ export function updatePost(postID, post) {
   };
 }
 
-/* Due to challenges this week, I discussed a lot with Matthew Goldstein and
- Alex Beals. Also, much code is pulled from examples from lectures and workshops
-*/
 // Update a post given an id and the post
 export function createPost(post) {
   return (dispatch) => {

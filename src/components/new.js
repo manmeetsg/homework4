@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
 /* Due to challenges this week, I discussed a lot with Matthew Goldstein and
  Alex Beals. Also, much code is pulled from examples from lectures and workshops
 */
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import { Link } from 'react-router';
@@ -22,16 +22,16 @@ class New extends Component {
     this.submit = this.submit.bind(this);
   }
 
+  contentChange(event) {
+    this.setState({ content: event.target.value });
+  }
+
   titleChange(event) {
     this.setState({ title: event.target.value });
   }
 
   tagsChange(event) {
     this.setState({ tags: event.target.value });
-  }
-
-  contentChange(event) {
-    this.setState({ content: event.target.value });
   }
 
   submit(event) {
