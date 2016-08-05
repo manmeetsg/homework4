@@ -1,3 +1,6 @@
+/* Due to challenges this week, I discussed a lot with Matthew Goldstein and
+ Alex Beals. Also, much code is pulled from examples from lectures and workshops
+*/
 import React from 'react';
 import { Link } from 'react-router';
 
