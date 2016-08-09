@@ -47,20 +47,20 @@ class New extends Component {
     return (
       <div className="new">
         <h3>Create A New Post</h3>
-        <form submit={this.submit}>
+        <form onSubmit={this.submit}>
           <div>
             <label htmlFor="title">Title</label>
             <input onChange={this.titleChange} type="text" id="title" placeholder="title" value={this.state.title} />
           </div>
 
           <div>
-            <label htmlFor="tags">Tags</label>
-            <input onChange={this.tagsChange} type="text" id="tags" placeholder="tags" value={this.state.tags} />
+            <label htmlFor="content">Content</label>
+            <input onChange={this.contentChange} type="text" id="content" placeholder="content" value={this.state.content} />
           </div>
 
           <div>
-            <label htmlFor="content">Content</label>
-            <input onChange={this.contentChange} type="text" id="content" placeholder="content" value={this.state.content} />
+            <label htmlFor="tags">Tags</label>
+            <input onChange={this.tagsChange} type="text" id="tags" placeholder="tags" value={this.state.tags} />
           </div>
 
           <button type="submit" onClick={this.submit}>Submit</button>

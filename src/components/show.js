@@ -72,13 +72,13 @@ class Show extends Component {
     } else if (this.state.isEditing) { // Editing mode
       return (
         <div className="post">
-          <form submit={this.submit}>
+          <form onSubmit={this.submit}>
             <label htmlFor="title">Title</label>
             <input onChange={this.titleChange} type="text" id="title" placeholder="TITLE" value={this.state.title} />
-            <label htmlFor="tags">Tags</label>
-            <textarea onChange={this.contentChange} type="text" id="content" placeholder="CONTENT" value={this.state.content} />
-            <input onChange={this.tagsChange} type="text" id="tags" placeholder="TAGS" value={this.state.tags} />
             <label htmlFor="content">Content</label>
+            <textarea onChange={this.contentChange} type="text" id="content" placeholder="CONTENT" value={this.state.content} />
+            <label htmlFor="tags">Tags</label>
+            <input onChange={this.tagsChange} type="text" id="tags" placeholder="TAGS" value={this.state.tags} />
             <button type="submit">Done Editing</button>
           </form>
           <button className="delete" onClick={this.deletePost}>Delete</button>
