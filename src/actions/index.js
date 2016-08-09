@@ -12,8 +12,8 @@ export const ActionTypes = {
   CREATE_POST: 'CREATE_POST',
   UPDATE_POST: 'UPDATE_POST',
 };
-const ROOT_URL = 'https://cs52-blog.herokuapp.com/api';
-// const ROOT_URL = 'http://localhost:9090/api';
+// const ROOT_URL = 'https://cs52-blog.herokuapp.com/api';
+const ROOT_URL = 'http://localhost:9090/api';
 const API_KEY = '?key=manmeet_gujral';
 
 // Fetch all posts
