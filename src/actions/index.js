@@ -14,7 +14,7 @@ export const ActionTypes = {
 };
 // const ROOT_URL = 'https://cs52-blog.herokuapp.com/api';
 // const ROOT_URL = 'http://localhost:9090/api';
-const ROOT_URL = 'cs52homework5pt1.herokuapp.com';
+const ROOT_URL = 'http://cs52homework5pt1.herokuapp.com/api';
 const API_KEY = '?key=manmeet_gujral';
 
 // Fetch all posts
