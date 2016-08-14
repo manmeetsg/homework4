@@ -15,7 +15,7 @@ export const ActionTypes = {
   DEAUTH_USER: 'DEAUTH_USER',
   AUTH_ERROR: 'AUTH_ERROR',
 };
-const ROOT_URL = 'http://cs52-hw5-pt2.herokuapp.com/api';
+const ROOT_URL = 'http://manmeetblog.herokuapp.com/api';
 // const ROOT_URL = 'http://localhost:9090/api';
 const API_KEY = '?key=manmeet_gujral';
 
