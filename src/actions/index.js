@@ -15,8 +15,8 @@ export const ActionTypes = {
   DEAUTH_USER: 'DEAUTH_USER',
   AUTH_ERROR: 'AUTH_ERROR',
 };
-const ROOT_URL = 'https://cs52-blog.herokuapp.com/api';
-// const ROOT_URL = 'http://localhost:9090/api';
+// const ROOT_URL = 'https://cs52-blog.herokuapp.com/api';
+const ROOT_URL = 'http://localhost:9090/api';
 const API_KEY = '?key=manmeet_gujral';
 
 // Helper functions
@@ -122,6 +122,7 @@ export function signinUser({ email, password }) {
     });
   };
 }
+
 
 export function signupUser({ email, password, username }) {
   return (dispatch) => {

@@ -87,8 +87,11 @@ class Show extends Component {
     } else { // Normal post without any editing going on
       return (
         <div className="post">
-          <h3>{this.props.post.title}</h3>
-          <h5>{this.props.post.tags}</h5>
+          <h2>{this.props.post.title}</h2>
+          <h4>
+              {(this.props.post.author) ? this.props.post.author.username : ''}
+          </h4>
+          <h6>{this.props.post.tags}</h6>
           <div dangerouslySetInnerHTML={{ __html: marked(this.props.post.content) }} />
           <button onClick={() => {
             this.setState({
