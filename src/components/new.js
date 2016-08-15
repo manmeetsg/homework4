@@ -9,7 +9,6 @@ import { Link } from 'react-router';
 class New extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       title: '',
       tags: '',

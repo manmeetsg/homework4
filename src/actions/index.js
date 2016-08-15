@@ -123,7 +123,7 @@ export function signinUser({ email, password }) {
   };
 }
 
-
+// Sign up a user
 export function signupUser({ email, password, username }) {
   return (dispatch) => {
     axios.post(`${ROOT_URL}/signup/${API_KEY}`, { email, password, username }).then(response => {

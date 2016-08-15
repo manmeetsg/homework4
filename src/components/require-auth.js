@@ -1,3 +1,6 @@
+/* Due to challenges this week, I discussed a lot with Matthew Goldstein and
+ Alex Beals. Also, much code is pulled from examples from lectures and workshops
+*/
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
@@ -7,8 +10,6 @@ export default function (ComposedComponent) {
 
     constructor(props) {
       super(props);
-
-      // init component state here
       this.state = {};
     }
 
@@ -30,7 +31,6 @@ export default function (ComposedComponent) {
       );
     }
   }
-
 
   const mapStateToProps = (state) => (
     {

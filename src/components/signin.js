@@ -1,14 +1,14 @@
+/* Due to challenges this week, I discussed a lot with Matthew Goldstein and
+ Alex Beals. Also, much code is pulled from examples from lectures and workshops
+*/
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import { Link } from 'react-router';
 
-// example class based component (smart component)
 class SignIn extends Component {
   constructor(props) {
     super(props);
-
-    // init component state here
     this.state = {
       email: '',
       password: '',
